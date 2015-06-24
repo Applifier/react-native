@@ -126,6 +126,10 @@ static NSString *RCTRecursiveAccessibilityLabel(UIView *view)
     _backgroundColor = [super backgroundColor];
   }
 
+  // TOUCH HACK PART 2 STARTS
+  [self setPointerEvents:RCTPointerEventsBoxNone];
+  // TOUCH HACK PART 2 ENDS
+
   return self;
 }
 
